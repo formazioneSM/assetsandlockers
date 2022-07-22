@@ -1,10 +1,10 @@
 <div class="wrapper">
     <form [formGroup]="form" (ngSubmit)="onSubmitLogin()">
         <lib-input [textLabel]="'Email*'" [placeholder]="'Inserisci la tua email'"
-            [backgroundInput]="'var(--input-bg-color)'" [for]="'email'" [parentFormGroup]="form" [controlName]="'email'"
+             [for]="'email'" [parentFormGroup]="form" [controlName]="'email'"
             [name]="'email'" [type]="'email'"></lib-input>
         <lib-input [textLabel]="'Password*'" [placeholder]="'Inserisci la tua password'"
-        [backgroundInput]="'var(--input-bg-color)'" [for]="'password'" [parentFormGroup]="form"
+         [for]="'password'" [parentFormGroup]="form"
         [controlName]="'password'" [name]="'password'" [type]="type" [autocomplete]="'current-password'"></lib-input>
         <div>
          <lib-button [typeButton]="'submit'" [textButton]="'Accedi'"></lib-button>
