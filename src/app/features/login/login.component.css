@@ -1,4 +1,30 @@
-.wrapper{
+.wrapper {
     margin: 0 auto;
     width: 80%;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.recoveryPass {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.recoveryPass>a {
+    align-self: flex-end;
+}
+
+.logo {
+
+    padding-bottom: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+
 }
