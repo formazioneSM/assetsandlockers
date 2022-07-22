@@ -1,13 +1,16 @@
-<div class="wrapper">
-    <form [formGroup]="form" (ngSubmit)="onSubmitLogin()">
-        <lib-input [textLabel]="'Email*'" [placeholder]="'Inserisci la tua email'"
-            [backgroundInput]="'var(--input-bg-color)'" [for]="'email'" [parentFormGroup]="form" [controlName]="'email'"
+<div class="wrapper mt-5">
+    <div class="text-center pb-5">
+        <h1>Prenotazione Armadietti</h1>
+    </div>
+    <form class="pt-3" [formGroup]="form" (ngSubmit)="onSubmitLogin()">
+        <lib-input class="my-3" [textLabel]="'Email*'" [placeholder]="'Inserisci la tua email'" [for]="'email'" [parentFormGroup]="form" [controlName]="'email'"
             [name]="'email'" [type]="'email'"></lib-input>
-        <lib-input [textLabel]="'Password*'" [placeholder]="'Inserisci la tua password'"
-        [backgroundInput]="'var(--input-bg-color)'" [for]="'password'" [parentFormGroup]="form"
-        [controlName]="'password'" [name]="'password'" [type]="type" [autocomplete]="'current-password'"></lib-input>
+        <lib-input class="mt-3 mb-5" [textLabel]="'Password*'" [placeholder]="'Inserisci la tua password'"
+  [for]="'password'" [parentFormGroup]="form"
+            [controlName]="'password'" [name]="'password'" [type]="type" [autocomplete]="'current-password'">
+        </lib-input>
         <div>
-         <lib-button [typeButton]="'submit'" [textButton]="'Accedi'"></lib-button>
+            <lib-button class="py-3" [typeButton]="'submit'" [textButton]="'Accedi'" [class]="'primary'"></lib-button>
         </div>
     </form>
 </div>
