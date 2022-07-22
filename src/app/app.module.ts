@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './features/login/login.component';
 import { HomeComponent } from './features/home/home.component';
+import { RentalTimerComponent } from './shared/components/rental-timer/rental-timer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RentalTimerComponent,
   ],
   imports: [
     BrowserModule,

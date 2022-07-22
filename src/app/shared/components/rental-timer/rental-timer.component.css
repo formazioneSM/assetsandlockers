@@ -1,0 +1,37 @@
+.rental-timer-wrapper {
+  min-height: 28px;
+}
+
+.clock-wrapper {
+  background: #e3e3e3;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-bar-site,
+.clock-wrapper {
+  border-radius: 25px;
+  height: 100%;
+}
+
+.progress-bar-site > svg {
+  fill: #f3f3f3;
+  min-height: 28px;
+
+}
+
+.state0 {
+  background: #005bff;
+}
+
+.state1 {
+  background: #69d460;
+}
+
+.state2 {
+  background: #ffc52f;
+}
+
+.state3 {
+  background: #ff2f2f;
+}
