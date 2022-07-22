@@ -2,6 +2,8 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
 
+// interfaccia per la struttura dati
+
 export interface Armadietti {
   id: number;
   name: string;
@@ -13,7 +15,7 @@ export interface Armadietti {
   codiceChiave:string;
   note:string;
 }
-
+// oggetto con struttura dati
 const ELEMENT_DATA: Armadietti[] = [
   {id: 1, name: '1A',           cancelletto: '1', s: 'A',p:12,possessore:'Mario Rossi',periodo:'un giorno', codiceChiave:'123ABC456DEF',note:'nota'},
   {id: 2, name: '3A',           cancelletto: '3', s: 'A',p:12,possessore:'Ivana Gialli',periodo:'un giorno', codiceChiave:'123ABC456DEF',note:'nota'},
@@ -30,7 +32,9 @@ const ELEMENT_DATA: Armadietti[] = [
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  // colonne 
   displayedColumns: string[] = ['id', 'name', '#', 's','p','possessore','periodo','codiceChiave','note'];
+  // riferimento al dato 
   dataSource = ELEMENT_DATA;
 
  
