@@ -1,3 +1,10 @@
+.mat-row {
+    height: auto;
+  }
+  
+  .mat-cell {
+    padding: 15px 15px 15px 0;
+  }
 .clock {
     width: 100%;
     padding-bottom: 1.5rem;
