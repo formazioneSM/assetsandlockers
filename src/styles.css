@@ -22,4 +22,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --placeholder-color: rgba(0, 0, 0, 0.5);
     --input-color: rgb(0, 0, 0);
 }
+
+.mat-typography p{
+    margin: 0!important
+}
   
