@@ -24,7 +24,8 @@
     "dayjs": "^1.11.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "ui-kit": "file:../../../Downloads/ui-kit-0.0.1.tgz",
+    "ui-kit": "file:../libreriaUiKit/dist/ui-kit/ui-kit-0.0.1.tgz",
+    "vanilla-js-wheel-zoom": "^6.12.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

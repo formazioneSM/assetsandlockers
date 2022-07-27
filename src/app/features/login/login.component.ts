@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  form: FormGroup = {} as FormGroup;
+  formLogin: FormGroup = {} as FormGroup;
   type: string = 'password';
 
   constructor( private _fb: FormBuilder,     public router: Router) { }
 
   ngOnInit(): void {
-    this.form = this._fb.group({
+    this.formLogin = this._fb.group({
       email: ['', [Validators.email, Validators.required]],
       password: ['',[Validators.required],
       ],
@@ -22,14 +22,15 @@ export class LoginComponent implements OnInit {
   }
 
   get email() {
-    return this.form?.get('email');
+    return this.formLogin?.get('email');
   }
 
   get password() {
-    return this.form?.get('password');
+    return this.formLogin?.get('password');
   }
 
   onSubmitLogin() {
+    console.log(`email:${this.formLogin.value.email}, password:${this.formLogin.value.password}`)
     this.router.navigate(['../home']);
   }
 

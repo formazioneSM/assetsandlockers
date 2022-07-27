@@ -10,7 +10,8 @@ import { HomeComponent } from './features/home/home.component';
 import { RentalTimerComponent } from './shared/components/rental-timer/rental-timer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
-import { MatTableModule } from '@angular/material/table' 
+import { MatTableModule } from '@angular/material/table';
+import { FloorComponent } from './features/floor/floor.component' 
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MatTableModule } from '@angular/material/table'
     LoginComponent,
     HomeComponent,
     RentalTimerComponent,
+    FloorComponent,
   ],
   imports: [
     BrowserModule,
